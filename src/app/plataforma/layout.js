@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+// import "./globals.css";
 import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,13 +13,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body className={inter.className}>
-        {children}
-      {/* <div className="h-screen w-full bg-white relative flex overflow-hidden">
+      <div className="h-screen w-full bg-white relative flex overflow-hidden">
       <aside className="h-full w-16 flex flex-col space-y-10 items-center justify-center relative bg-gray-800 text-white">
         <div className="h-10 w-10 flex items-center justify-center rounded-lg cursor-pointer hover:text-gray-800 hover:bg-white hover:duration-300 hover:ease-linear focus:bg-white">
             <Link href={`/`}>
               <b>H</b>
+            {/* <p>Home</p> */}
              </Link>
+          {/* </Link> */}
         </div>
         <div className="h-10 w-10 flex items-center justify-center rounded-lg cursor-pointer hover:text-gray-800 hover:bg-white hover:duration-300 hover:ease-linear focus:bg-white">
         <Link href={`/home`}>
@@ -62,7 +63,7 @@ export default function RootLayout({ children }) {
           </div>
         </main>
       </div>
-    </div> */}
+    </div>
       </body>
     </html>
   );
